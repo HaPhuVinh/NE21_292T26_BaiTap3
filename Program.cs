@@ -92,7 +92,7 @@ namespace NE21_292T26_BaiTap3
             //Console.Write("Nhập vào số nguyên dương n: ");
             //int n = int.Parse(Console.ReadLine());
             //bool laNguyenTo = true;
-            //if(n == 0||n==1)
+            //if (n == 0 || n == 1)
             //{
             //    Console.WriteLine("Không có số nguyên tố:");
             //}
@@ -116,7 +116,50 @@ namespace NE21_292T26_BaiTap3
             //        }
             //    }
             //}
-            
+
+            //Bài 9
+            //Console.Write("Nhập vào số nguyên dương n:");
+            //int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Vẽ tam giác vuông: ");
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.Write("\n");
+            //}
+            //Console.WriteLine("Vẽ tam giác cân: ");
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    for (int j = 1; j <= n-i; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int j = 1; j <= 2*i-1; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.Write("\n");
+            //}
+
+            //Bài 10
+            Console.Write("Nhập vào số nguyên dương lớn hơn 2:\n");
+            int n = int.Parse(Console.ReadLine());
+            double soKeTiep;
+            double so1=0;
+            double so2=1;
+            Console.WriteLine("Dãy Fibonacci {0} phần tử:", n);
+            Console.Write(so1 + "\t");
+            Console.Write(so2 + "\t");
+            for (int i = 3; i <= n; i++)
+            {
+                soKeTiep = so1 + so2;
+                Console.Write(soKeTiep + "\t");
+                so1 = so2;
+                so2 = soKeTiep;
+            }
+
             Console.ReadKey();
         }
     }
